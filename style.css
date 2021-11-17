@@ -5,7 +5,9 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+body{
+    display: flex;
+}
 footer{
     background-color: #282828;
     display: flex;
@@ -72,4 +74,83 @@ footer{
     background-color: pink;
     color: green;
     width: 100px;
+}
+/* Barra di navigazione laterale */
+nav{
+    width: 15%;
+    background-color: black;
+    height: calc(100vh - 80px);  
+}
+.container_nav{
+    padding: 10px;
+}
+#logo{
+    max-height: 30px;
+    margin-bottom: 20px;
+}
+.nav_top{
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.nav_top img{
+    max-height: 20px;
+}
+.nav_top ul li a{
+    text-decoration: none;
+    color: grey;
+    vertical-align: top;
+    cursor: pointer;
+}
+.nav_top ul li a:hover{
+    border-left: 2px solid green;
+    padding-left: 5px;
+    color: white;
+}
+.nav_top ul li{
+    list-style-type: none;
+    color: white;
+}
+h3{
+    color: white;
+    text-transform: uppercase;
+}
+/* Lista playlist */
+#create_playlist i{
+    background-color: grey;
+    padding: 5px;
+    cursor: pointer;
+}
+#create_playlist a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 5px;
+}
+#create_playlist a:hover{
+    color: white;
+    font-weight: bold;
+}
+#create_playlist{
+    margin: 5px 0;
+}
+.play_list{
+    color: white;
+}
+.play_list ul li{
+    list-style-type: none;
+    padding: 5px 0;
+}
+.play_list ul li a{
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+}
+.play_list ul li a:hover{
+    color: white;
+    font-weight: bold;
+}
+/* main */
+main{
+    width: 90%;
+    height: calc(100vh - 80px);
+    background-color: #141922;
 }
