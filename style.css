@@ -5,7 +5,71 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-/* parte sinistra del footer */
-.footer_sx{
+
+footer{
     background-color: #282828;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 80px;
+    color: white;
+}
+.footer_sx, .footer_dx{
+    width: 20%;
+}
+.footer_center{
+    width: 60%;
+}
+/* parte sinistra del footer */
+.footer_sx img{
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px;
+}
+.footer_sx i{
+    margin: 0 5px;
+}
+.footer_sx_icons{
+    padding-left: 20px;
+    margin: auto;
+}
+.footer_sx{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+/* Parte centrale del footer */
+.time_bar{
+    background-color: grey;
+    border-radius: 5px;
+    width: 400px;
+    height: 5px;
+    display: inline-block;
+}
+
+.footer_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.commands .fa-circle-play{
+    margin: 10px;
+}
+.commands i, .footer_dx i{
+    margin: 10px 5px;
+    color: white;
+}
+/* parte destra del footer */
+.footer_dx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myRange{
+    background-color: pink;
+    color: green;
+    width: 100px;
 }

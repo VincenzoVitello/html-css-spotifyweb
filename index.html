@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
 </head>
 <body>
@@ -16,18 +17,40 @@
     </header>
     <main>
         <nav>
-
+            
         </nav>
     </main>
     <footer>
         <!-- Parte sinistra del footer -->
         <div class="footer_sx">
             <img src="spotify/img/sinister.jpeg" alt="">
-            <h3>Sinister</h3>
-            <h4>Brano nome</h4>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-folder"></i>
+            <div class="now_listening">
+                <h4>Sinister</h4>
+                <p>Song Name</p>
+            </div>
+            <div class="footer_sx_icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
         </div>
+        <!-- Parte centrale del footer -->
+        <div class="footer_center">
+            <div class="commands">
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+            </div>
+            <div class="time_bar"></div>
+        </div>
+        <!-- parte destra del footer -->
+       <div class="footer_dx">
+        <a href="#"><i class="fa-solid fa-list"></i></a>
+        <a href="#"><i class="fa-solid fa-desktop"></i></a>
+        <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+       </div>
     </footer>
 </body>
 </html>
