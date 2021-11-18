@@ -203,6 +203,7 @@ main{
     width: 90%;
     height: calc(100vh - 80px);
     background-color: #141922;
+    overflow-y: scroll;
 }
 header{
     width: 100%;
@@ -223,6 +224,7 @@ header{
 }
 .upgrade:hover{
     background-color: rgba(255, 255, 255, .3);
+    padding: 10px 22px;
 }
 .main_section{
     height: calc(100% - 50px);
@@ -267,4 +269,24 @@ header{
 .album_desc{
     text-align: center;
     font-size: 10px;
+}
+.created_for{
+    margin: 15px;
+}
+.created_for h2{
+    font-size: 16px;
+    margin: 15px 0;
+}
+.radar{
+    display: flex;
+    justify-content: flex-start;
+}
+.created_for_covers, .round_img{
+    margin-right: 30px;
+}
+.round_img img{
+    border-radius: 50%;
+}
+main img:hover{
+    opacity: .3;
 }
