@@ -4,20 +4,27 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 body{
     display: flex;
 }
 footer{
     background-color: #282828;
-    display: flex;
-    justify-content: space-evenly;
     position: fixed;
     bottom: 0;
     width: 100vw;
     height: 80px;
     color: white;
 }
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 98%;
+    margin: 20px auto;
+
+}
+
 .footer_sx, .footer_dx{
     width: 20%;
 }
@@ -32,6 +39,10 @@ footer{
 }
 .footer_sx i{
     margin: 0 5px;
+    cursor: pointer;
+}
+.footer_sx i:active{
+    color: rgb(0, 230, 0);
 }
 .footer_sx_icons{
     padding-left: 20px;
@@ -71,21 +82,21 @@ footer{
     align-items: center;
 }
 #myRange{
-    background-color: pink;
-    color: green;
     width: 100px;
 }
+
 /* Barra di navigazione laterale */
 nav{
     width: 15%;
     background-color: black;
-    height: calc(100vh - 80px);  
+    height: calc(100vh - 80px); 
+    font-size: 14px; 
 }
 .container_nav{
     padding: 10px;
 }
 #logo{
-    max-height: 30px;
+    max-height: 35px;
     margin-bottom: 20px;
 }
 .nav_top{
@@ -102,23 +113,33 @@ nav{
     cursor: pointer;
 }
 .nav_top ul li a:hover{
-    border-left: 2px solid green;
+    border-left: 2px solid rgb(0, 230, 0);
     padding-left: 5px;
     color: white;
+}
+.nav_top ul li:hover{
+    padding: 5px 0;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
 }
 .nav_top ul li{
     list-style-type: none;
     color: white;
+    margin: 5px 0;
 }
-h3{
-    color: white;
-    text-transform: uppercase;
-}
+
 /* Lista playlist */
 #create_playlist i{
     background-color: grey;
     padding: 5px;
-    cursor: pointer;
+    margin-right: 5px;
+    color: white;
+}
+section.play_list h3{
+    font-size: 16px;
+    padding: 5px;
+    text-transform: uppercase;
 }
 #create_playlist a{
     text-decoration: none;
@@ -137,8 +158,12 @@ h3{
 }
 .play_list ul li{
     list-style-type: none;
-    padding: 5px 0;
+    padding: 5px;
 }
+/* .play_list ul{
+   overflow-y: scroll;
+} */
+
 .play_list ul li a{
     color: gray;
     text-decoration: none;
@@ -148,9 +173,98 @@ h3{
     color: white;
     font-weight: bold;
 }
+/* parte bassa del nav */
+.nav_bottom .download_app img{
+    max-height: 15px;
+    padding-right: 5px;
+}
+.nav_bottom .download_app{
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+}
+.nav_bottom .download_app a{
+    width: 100px;
+    text-decoration: none;
+}
+.nav_bottom .user img{
+    max-height: 25px;
+    background-color: gray;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
 /* main */
 main{
     width: 90%;
     height: calc(100vh - 80px);
     background-color: #141922;
+}
+header{
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    height: 55px;
+    position: relative;
+}
+.upgrade{
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.upgrade:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+.main_section{
+    height: calc(100% - 50px);
+}
+.main_section_browse{
+   padding: 10px 0;
+   margin: auto;
+   width: 80%;
+}
+.main_section_browse ul{
+    display: flex;
+    justify-content: space-around;
+
+}
+.main_section_browse ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+}
+.main_section_browse ul li{
+    list-style-type: none;
+}
+.main_section_browse ul li a:hover{
+    border-bottom: 2px solid rgb(0, 230, 0);
+}
+.artist img{
+    max-height: 150px;
+}
+.artist{
+    max-width: 150px;
+}
+.covers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.albums h2{
+    margin: 0 0 15px 15px;
+    font-size: 16px;
+}
+.album_desc{
+    text-align: center;
+    font-size: 10px;
 }

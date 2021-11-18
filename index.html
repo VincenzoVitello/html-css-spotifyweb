@@ -12,9 +12,7 @@
     <title>Spotify</title>
 </head>
 <body>
-    <header>
-
-    </header>
+    
     <nav>
         <!-- Parte superiore del barra di navigazione -->
         <div class="container_nav">
@@ -30,7 +28,7 @@
             <section class="play_list">
                 <h3>Playlist</h3>
                 <div id="create_playlist">
-                    <i class="fa-solid fa-plus"></i><a href="#">Crea Playlist</a> 
+                    <a href="#"><i class="fa-solid fa-plus"></i>Crea Playlist</a> 
                 </div>
                 <ul>
                     <li><a href="#">Nome Playlist</a></li>
@@ -41,16 +39,86 @@
                     <li><a href="#">Nome Playlist</a></li>
                 </ul>
             </section>
-            
-            
+            <!-- parte bassa del nav -->
+            <div class="nav_bottom">
+                <div class="download_app">
+                    <a href="#"><img src="spotify/img/download.svg" alt="">Installa App</a>
+                </div>
+                <div class="user">
+                    <img src="spotify/img/profile.svg" alt="">
+                    <span>John Doe</span> 
+                </div>
+            </div>
         </div>        
     </nav>
     <main>
-        
+        <header>
+            <div class="upgrade">effettua l'upgrade</div>
+        </header>
+        <section class="main_section">
+            <div class="main_section_browse">
+                <ul>
+                    <li><a href="#">In evidenza</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Classifiche</a></li>
+                    <li><a href="#">Generi e mood</a></li>
+                    <li><a href="#">Nuove Uscite</a></li>
+                    <li><a href="#">Scopri</a></li>
+                </ul>
+            </div>
+            <div class="albums">
+                <h2>Recently Played</h2>
+                <div class="covers">
+                    <div class="artist">
+                        <img src="spotify/img/metal_lifting.jpg" alt="">
+                        <div class="album_desc">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <img src="spotify/img/stranger.jpeg" alt="">
+                        <div class="album_desc">
+                            <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <p>Kyle Dixon & Michael Stein</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <img src="spotify/img/aquietplace.jpeg" alt="">
+                        <div class="album_desc">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <img src="spotify/img/split.jpeg" alt="">
+                        <div class="album_desc">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <img src="spotify/img/cure.jpeg" alt="">
+                        <div class="album_desc">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <img src="spotify/img/sinister.jpeg" alt="">
+                        <div class="album_desc">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <!-- Parte sinistra del footer -->
-        <div class="footer_sx">
+        <div class="footer">
+            <div class="footer_sx">
             <img src="spotify/img/sinister.jpeg" alt="">
             <div class="now_listening">
                 <h4>Sinister</h4>
@@ -79,6 +147,8 @@
         <a href="#"><i class="fa-solid fa-volume-high"></i></a>
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
        </div>
+        </div>
+        
     </footer>
 </body>
 </html>
