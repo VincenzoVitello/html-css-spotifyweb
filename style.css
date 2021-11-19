@@ -1,292 +1,281 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+/* generale */
 body{
-    display: flex;
+  font-family: 'Montserrat', sans-sans-serif;
+  color: #fff
 }
-footer{
-    background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 80px;
-    color: white;
+#wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
 }
-.footer{
-    display: flex;
-    justify-content: space-evenly;
-    width: 98%;
-    margin: 20px auto;
-
-}
-
-.footer_sx, .footer_dx{
-    width: 20%;
-}
-.footer_center{
-    width: 60%;
-}
-/* parte sinistra del footer */
-.footer_sx img{
-    max-width: 40px;
-    max-height: 40px;
-    margin-right: 10px;
-}
-.footer_sx i{
-    margin: 0 5px;
-    cursor: pointer;
-}
-.footer_sx i:active{
-    color: rgb(0, 230, 0);
-}
-.footer_sx_icons{
-    padding-left: 20px;
-    margin: auto;
-}
-.footer_sx{
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-}
-/* Parte centrale del footer */
-.time_bar{
-    background-color: grey;
-    border-radius: 5px;
-    width: 400px;
-    height: 5px;
-    display: inline-block;
-}
-
-.footer_center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.commands .fa-circle-play{
-    margin: 10px;
-}
-.commands i, .footer_dx i{
-    margin: 10px 5px;
-    color: white;
-}
-/* parte destra del footer */
-.footer_dx{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#myRange{
-    width: 100px;
-}
-
-/* Barra di navigazione laterale */
-nav{
-    width: 15%;
-    background-color: black;
-    height: calc(100vh - 80px); 
-    font-size: 14px; 
-}
-.container_nav{
-    padding: 10px;
-}
-#logo{
-    max-height: 35px;
-    margin-bottom: 20px;
-}
-.nav_top{
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-.nav_top img{
-    max-height: 20px;
-}
-.nav_top ul li a{
-    text-decoration: none;
-    color: grey;
-    vertical-align: top;
-    cursor: pointer;
-}
-.nav_top ul li a:hover{
-    border-left: 2px solid rgb(0, 230, 0);
-    padding-left: 5px;
-    color: white;
-}
-.nav_top ul li:hover{
-    padding: 5px 0;
-    font-weight: bold;
-    width: 100%;
-    border-radius: 5px;
-}
-.nav_top ul li{
-    list-style-type: none;
-    color: white;
-    margin: 5px 0;
-}
-
-/* Lista playlist */
-#create_playlist i{
-    background-color: grey;
-    padding: 5px;
-    margin-right: 5px;
-    color: white;
-}
-section.play_list h3{
-    font-size: 16px;
-    padding: 5px;
-    text-transform: uppercase;
-}
-#create_playlist a{
-    text-decoration: none;
-    color: gray;
-    margin-left: 5px;
-}
-#create_playlist a:hover{
-    color: white;
-    font-weight: bold;
-}
-#create_playlist{
-    margin: 5px 0;
-}
-.play_list{
-    color: white;
-}
-.play_list ul li{
-    list-style-type: none;
-    padding: 5px;
-}
-/* .play_list ul{
-   overflow-y: scroll;
-} */
-
-.play_list ul li a{
-    color: gray;
-    text-decoration: none;
-    font-size: 14px;
-}
-.play_list ul li a:hover{
-    color: white;
-    font-weight: bold;
-}
-/* parte bassa del nav */
-.nav_bottom .download_app img{
-    max-height: 15px;
-    padding-right: 5px;
-}
-.nav_bottom .download_app{
-    border-bottom: 1px solid white;
-    padding: 10px 0;
-}
-.nav_bottom .download_app a{
-    width: 100px;
-    text-decoration: none;
-}
-.nav_bottom .user img{
-    max-height: 25px;
-    background-color: gray;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-.user{
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-}
-/* main */
 main{
-    width: 90%;
-    height: calc(100vh - 80px);
-    background-color: #141922;
-    overflow-y: scroll;
+  height: calc(100% - 90px);
+  overflow: hidden;
 }
-header{
-    width: 100%;
-    background: rgba(0,0,0,.5);
-    height: 55px;
-    position: relative;
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: table;
 }
-.upgrade{
-    border: 1px solid white;
-    text-transform: uppercase;
-    font-size: 12px;
-    border-radius: 20px;
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    padding: 8px 20px;
-    cursor: pointer;
+a{
+  text-decoration: none;
+  color: white;
+  opacity: .7;
 }
-.upgrade:hover{
-    background-color: rgba(255, 255, 255, .3);
-    padding: 10px 22px;
+a:hover{
+  opacity: 1;
 }
-.main_section{
-    height: calc(100% - 50px);
+ul li{
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 20px;
 }
-.main_section_browse{
-   padding: 10px 0;
-   margin: auto;
-   width: 80%;
+main nav.main_nav{
+  float: left;
+  width: 50px;
+  height: 100%;
+  background-color: black;
 }
-.main_section_browse ul{
+main nav.main_nav .nav_top{
+  height: calc(100% - 80px);
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+main nav.main_nav .nav_bottom{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+section.nav_bottom .user img{
+  width: 27px;
+  height: 27px;
+  background-color: grey;
+  border-radius: 50%;
+  overflow: hidden;
+}
+section.nav_bottom .app_download img{
+  width: 15px;
+}
+main #content{
+  float: left;
+  width: calc(100% - 50px);
+  height: 100%;
+  background: #141922;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+main nav.main_nav .nav_logo,
+.nav_main_menu ul li a,
+.text_active_desk,
+.playlist{
+  display: none;
+}
+#player_commands li{
+  display: inline-block;
+  margin: 0 5px;
+}
+#player_commands{
+  text-align: center;
+}
+.command_play{
+  font-size: 18px;
+  margin: 0 10px;
+}
+/* media query */
+@media (min-width: 576px){
+  main nav.main_nav{
+    width: 200px;
+  }
+  main nav.main_nav .nav_logo{
+    display: block;
+  }
+  .nav_logo img{
+    height: 40px;
+    margin: 5px;
+  }
+  main nav.main_nav .nav_logo_mobile {
+    display: none;
+  }
+  .nav_main_menu ul li a{
+    display: inline-block;
+  }
+  .nav_main_menu ul li{
+    line-height: 20px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+  }
+  .nav_main_menu ul li:hover{
+    border-left: 3px solid yellowgreen;
+  }
+  .nav_main_menu ul li img{
+    height: 20px;
+    margin: 2px;
+  }
+  .nav_main_menu ul{
+    text-align: left;
+  }
+  main nav.main_nav .nav_bottom{
+    align-items: flex-start;
+    padding-left: 5px;
+  }
+  .text_active_desk{
+    display: inline-block;
+  }
+  main{
+    background-color: #141922;
+  }
+  .app_download img{
+    height: 12px;
+  }
+  .app_download{
+    line-height: 12px;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    width: 98%;
+  }
+  .app_download p{
+    font-size: 12px;
+  }
+  .nav_bottom .user img{
+    vertical-align: middle;
+  }
+  .playlist{
+    display:block;
+    margin-left: 5px;
+  }
+  .playlist ul li a i{
+    padding: 5px;
+    margin-right: 5px;
+    background-color: grey;
+  }
+  .playlist h2{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 10px 0;
+  }
 
 }
-.main_section_browse ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: bold;
+/* fine query */
+main nav.main_nav .nav_main_menu{
+  text-align: center;
+  padding: 5px;
 }
-.main_section_browse ul li{
-    list-style-type: none;
+main nav.main_nav .nav_logo_mobile img{
+  width: 70%
 }
-.main_section_browse ul li a:hover{
-    border-bottom: 2px solid rgb(0, 230, 0);
+main nav.nav_main_menu .nav_logo img{
+  width: 60%
 }
-.artist img{
-    max-height: 150px;
+/* footer */
+footer{
+  height: 90px;
+  background-color: #282828;
 }
-.artist{
-    max-width: 150px;
+.player_bar{
+  width: 80%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, .2);
+  cursor: pointer;
 }
-.covers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.time_bar{
+  margin-top: 4px;
 }
-.albums h2{
-    margin: 0 0 15px 15px;
-    font-size: 16px;
+.player_bar:hover .gen_bar{
+  background-color: seagreen;
 }
-.album_desc{
-    text-align: center;
-    font-size: 10px;
+.gen_bar{
+  position: relative;
+  height: 100%;
+  width: 25%;
+  background-color: rgba(255, 255, 255, .6);
 }
-.created_for{
-    margin: 15px;
+.pallino{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
 }
-.created_for h2{
-    font-size: 16px;
-    margin: 15px 0;
+footer #player{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
-.radar{
-    display: flex;
-    justify-content: flex-start;
+footer #player .player_album,
+footer #player .player_audio{
+  width: 230px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.created_for_covers, .round_img{
-    margin-right: 30px;
+footer #player .player_audio{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.round_img img{
-    border-radius: 50%;
+footer #player .player_album .player_album_cover{
+  width: 20%;
 }
-main img:hover{
-    opacity: .3;
+footer #player .player_album .player_album_cover img{
+width: 100%;
+}
+footer #player .player_album .player_album_title{
+width: 50%;
+padding-left: 10px;
+}
+footer #player .player_album .player_album_title h2{
+ font-size: 12px;
+ line-height: 12px;
+}
+footer #player .player_album .player_album_title p{
+font-size: 10px;
+}
+footer #player .player_album .player_icon i{
+  margin-left: 10px;
+}
+/* audio */
+footer #player .player_audio ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+footer #player .player_icon .icons_list{
+list-style: none;
+font-size: 13px;
+line-height: 35px;
+}
+.player_audio_volume{
+  width: 65%;
+}
+.player_controller{
+  width: 40%;
+}
+.player_controller_time_min{
+  width: 10%;
+  margin: 0 10px;
+  font-size: 10px;
+}
+.player_controller_time{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+ul.icons_list{
+  width: 200px;
 }

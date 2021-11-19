@@ -1,190 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" dir="ltr">
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
-</head>
-<body>
-    
-    <nav>
-        <!-- Parte superiore del barra di navigazione -->
-        <div class="container_nav">
-            <a href="#"><img src="spotify/img/logo.svg" id="logo" alt=""></a>
-            <div class="nav_top">
-                <ul>
-                    <li><a href="#"><img src="spotify/img/home.svg" alt="">Home</a></li>
-                    <li><a href="#"><img src="spotify/img/search.svg" alt="">Cerca</a></li>
-                    <li><a href="#"><img src="spotify/img/libreria.svg" alt="">La tua libreria</a></li>
-                </ul>
-            </div> 
-        <!-- sezione playlist -->
-            <section class="play_list">
-                <h3>Playlist</h3>
-                <div id="create_playlist">
-                    <a href="#"><i class="fa-solid fa-plus"></i>Crea Playlist</a> 
-                </div>
-                <ul>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                </ul>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- main -->
+      <!-- navtop -->
+      <main class="clearfix">
+        <nav class="main_nav">
+          <section class="nav_top">
+            <div class="nav_logo_mobile">
+              <img src="spotify/img/logo-small.svg" alt="">
+            </div>
+
+            <div class="nav_logo">
+              <img src="spotify/img/logo.svg" alt="">
+            </div>
+
+            <section class="nav_main_menu">
+              <ul>
+                <li class="active"><img src="spotify/img/home.svg" alt=""><a href="#">Home</a></li>
+                <li class="active"><img src="spotify/img/search.svg" alt=""><a href="#">Cerca</a></li>
+                <li class="active"><img src="spotify/img/libreria.svg" alt=""><a href="#">La mia libreria</a></li>
+              </ul>
             </section>
-            <!-- parte bassa del nav -->
-            <div class="nav_bottom">
-                <div class="download_app">
-                    <a href="#"><img src="spotify/img/download.svg" alt="">Installa App</a>
-                </div>
-                <div class="user">
-                    <img src="spotify/img/profile.svg" alt="">
-                    <span>John Doe</span> 
-                </div>
+            <!-- playlist -->
+            <section class="playlist">
+              <h2>Playlist</h2>
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-plus"></i>Crea Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
+            </section>
+            <!-- nav bottom -->
+          </section>
+          <section class="nav_bottom">
+            <div class="app_download">
+              <a href="#">
+                <img src="spotify/img/download.svg" alt="">
+                <p class="text_active_desk">Download app</p>
+              </a>
             </div>
-        </div>        
-    </nav>
-    <main>
-        <header>
-            <div class="upgrade">effettua l'upgrade</div>
-        </header>
-        <section class="main_section">
-            <div class="main_section_browse">
-                <ul>
-                    <li><a href="#">In evidenza</a></li>
-                    <li><a href="#">Podcast</a></li>
-                    <li><a href="#">Classifiche</a></li>
-                    <li><a href="#">Generi e mood</a></li>
-                    <li><a href="#">Nuove Uscite</a></li>
-                    <li><a href="#">Scopri</a></li>
-                </ul>
+            <div class="user">
+                <img src="spotify/img/profile.svg" alt="">
+                <p class="text_active_desk">John Doe</p>
             </div>
-            <div class="albums">
-                <h2>Recently Played</h2>
-                <div class="covers">
-                    <div class="artist">
-                        <img src="spotify/img/metal_lifting.jpg" alt="">
-                        <div class="album_desc">
-                            <h3>Heavy Metal</h3>
-                            <p>Subtitle</p>
-                        </div>
-                    </div>
-                    <div class="artist">
-                        <img src="spotify/img/stranger.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                            <p>Kyle Dixon & Michael Stein</p>
-                        </div>
-                    </div>
-                    <div class="artist">
-                        <img src="spotify/img/aquietplace.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>A Quiet Place</h3>
-                            <p>Subtitle</p>
-                        </div>
-                    </div>
-                    <div class="artist">
-                        <img src="spotify/img/split.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>Split</h3>
-                            <p>Subtitle</p>
-                        </div>
-                    </div>
-                    <div class="artist">
-                        <img src="spotify/img/cure.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>A Cure for Wellness</h3>
-                            <p>Subtitle</p>
-                        </div>
-                    </div>
-                    <div class="artist">
-                        <img src="spotify/img/sinister.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>Sinister</h3>
-                            <p>Subtitle</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="created_for">
-                <h2>Creato per John Doe</h2>
-                <div class="radar">
-                    <div class="artist created_for_covers">
-                        <img src="spotify/img/radar.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>Release Radar</h3>
-                        </div>
-                    </div>
-                    <div class="artist created_for_covers">
-                        <img src="spotify/img/mixdaily.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>Daily Mix 1</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="most_popular created_for">
-                <h2>Artisti più popolari</h2>
-                <div class="radar">
-                    <div class="artist round_img">
-                        <img src="spotify/img/youg.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>Lana del Rey</h3>
-                            <p>Young % Beautiful</p>
-                        </div>
-                    </div>
-                    <div class="artist round_img">
-                        <img src="spotify/img/einaudi.jpeg" alt="">
-                        <div class="album_desc">
-                            <h3>Ludovico Einaudi</h3>
-                            <p>Subtitle</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </section>
+        </nav>
+        <section id="content">
+
         </section>
-    </main>
-    <footer>
-        <!-- Parte sinistra del footer -->
-        <div class="footer">
-            <div class="footer_sx">
-            <img src="spotify/img/sinister.jpeg" alt="">
-            <div class="now_listening">
-                <h4>Sinister</h4>
-                <p>Song Name</p>
+      </main>
+      <!-- chiusura main -->
+      <!-- footer -->
+      <footer>
+        <section id="player">
+          <div class="player_album">
+            <div class="player_album_cover">
+              <img src="spotify/img/sinister.jpeg" alt="">
             </div>
-            <div class="footer_sx_icons">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+            <div class="player_album_title">
+              <h2> <a href="#">sinister</a> </h2>
+              <p> <a href="#">Nome Brano</a> </p>
             </div>
-        </div>
-        <!-- Parte centrale del footer -->
-        <div class="footer_center">
-            <div class="commands">
-                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
-                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
-                <a href="#"><i class="fa-regular fa-circle-play"></i></a>
-                <a href="#"><i class="fa-solid fa-forward-step"></i></a>
-                <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+            <div class="player_icon">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-regular fa-folder"></i></a>
             </div>
-            <div class="time_bar"></div>
-        </div>
-        <!-- parte destra del footer -->
-       <div class="footer_dx">
-        <a href="#"><i class="fa-solid fa-list"></i></a>
-        <a href="#"><i class="fa-solid fa-desktop"></i></a>
-        <a href="#"><i class="fa-solid fa-volume-high"></i></a>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-       </div>
-        </div>
+          </div>
+
+          <div class="player_controller">
+            <div class="player_controller_icons">
+              <ul id="player_commands">
+                <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-play command_play"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-forward-step"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a></li>
+              </ul>
+            </div>
+            <div class="player_controller_time">
+              <div class="player_controller_time_min">
+                0:25
+              </div>
+
+              <div class="player_bar time_bar">
+                <div class="gen_bar">
+                  <div class="pallino"></div>
+                </div>
+              </div>
+              <div class="player_controller_time_min">
+                4:25
+              </div>
+            </div>
+          </div>
+
+          <div class="player_audio">
+            <ul class="icons_list">
+              <li> <i class="fas fa-list-ul"></i> </li>
+              <li> <i class="fas fa-desktop"></i> </li>
+              <li><i class="fa-solid fa-volume-high"></i></li>
+              <li class="player_audio_volume">
+                <div class="player_bar">
+                  <div class="gen_bar">
+                  <div class="pallino"></div>
+                  </div>
+                </div>
+            </li>
+            </ul>
+          </div>
+        </section>
         
-    </footer>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
